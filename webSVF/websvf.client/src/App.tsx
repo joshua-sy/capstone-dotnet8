@@ -10,10 +10,15 @@ interface Forecast {
 
 function App() {
     const [forecasts, setForecasts] = useState<Forecast[]>();
+    const [svfHelloWorld, setSvfHelloWorld] = useState('');
+
 
     useEffect(() => {
         populateWeatherData();
     }, []);
+    // useEffect(() => {
+    //     getHelloWorldSVF();
+    // }, []);
 
     const contents = forecasts === undefined
         ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
@@ -38,11 +43,18 @@ function App() {
             </tbody>
         </table>;
 
+    const contentsSvf = svfHelloWorld === undefined
+    ? <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationreact">https://aka.ms/jspsintegrationreact</a> for more details.</em></p>
+    : svfHelloWorld
+    
+
     return (
         <div>
             <h1 id="tableLabel">Weather forecast</h1>
             <p>This component demonstrates fetching data from the server.</p>
             {contents}
+            <div>Hello world</div>
+            {/* <div>{contentsSvf}</div> */}
         </div>
     );
 
@@ -50,6 +62,14 @@ function App() {
         const response = await fetch('weatherforecast');
         const data = await response.json();
         setForecasts(data);
+    }
+    async function getHelloWorldSVF() {
+        console.log('calling svf controller');
+        const response = await fetch('Svf');
+
+        const data = await response.text();
+        // console.log('data is ', data)
+        setSvfHelloWorld(data);
     }
 }
 

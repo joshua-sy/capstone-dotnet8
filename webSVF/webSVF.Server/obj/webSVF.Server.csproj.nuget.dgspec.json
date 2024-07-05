@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\thesis\\webSVF\\webSVF.Server\\webSVF.Server.csproj": {}
+    "/Users/joshuasy/Code/codeGPT_thesis/capstone-dotnet8/webSVF/webSVF.Server/webSVF.Server.csproj": {}
   },
   "projects": {
-    "D:\\thesis\\webSVF\\webSVF.Server\\webSVF.Server.csproj": {
+    "/Users/joshuasy/Code/codeGPT_thesis/capstone-dotnet8/webSVF/webSVF.Server/webSVF.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\thesis\\webSVF\\webSVF.Server\\webSVF.Server.csproj",
+        "projectUniqueName": "/Users/joshuasy/Code/codeGPT_thesis/capstone-dotnet8/webSVF/webSVF.Server/webSVF.Server.csproj",
         "projectName": "webSVF.Server",
-        "projectPath": "D:\\thesis\\webSVF\\webSVF.Server\\webSVF.Server.csproj",
-        "packagesPath": "C:\\Users\\Joshua Sy\\.nuget\\packages\\",
-        "outputPath": "D:\\thesis\\webSVF\\webSVF.Server\\obj\\",
+        "projectPath": "/Users/joshuasy/Code/codeGPT_thesis/capstone-dotnet8/webSVF/webSVF.Server/webSVF.Server.csproj",
+        "packagesPath": "/Users/joshuasy/.nuget/packages/",
+        "outputPath": "/Users/joshuasy/Code/codeGPT_thesis/capstone-dotnet8/webSVF/webSVF.Server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Joshua Sy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/joshuasy/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
